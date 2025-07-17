@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amada Zuleyma</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente Montserrat desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Configuración de Tailwind para usar la fuente Montserrat y colores personalizados -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'], // Cambiado a Montserrat
+                    },
+                    colors: {
+                        'rose-blush': '#FCE7F3', /* Un rosa muy claro */
+                        'pink-petal': '#FBCFE8', /* Un rosa suave */
+                        'purple-dream': '#A78BFA', /* Un morado suave */
+                        'text-dark': '#3F2C4A', /* Un color de texto oscuro pero no negro puro */
+                        'gradient-start': '#FFD1DC', /* Rosa suave para el inicio del degradado */
+                        'gradient-end': '#E0BBE4',   /* Lavanda suave para el final del degradado */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados adicionales */
+        body {
+            font-family: 'Montserrat', sans-serif; /* Asegura que la fuente se aplique al cuerpo */
+            /* Fondo degradado animado */
+            background: linear-gradient(270deg, #FFD1DC, #E0BBE4, #FCE7F3); /* Colores del degradado */
+            background-size: 600% 600%; /* Tamaño para permitir movimiento del degradado */
+            animation: gradientAnimation 15s ease infinite; /* Animación de 15s, suave, infinita */
+        }
+
+        /* Definición de la animación del degradado */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 2s ease-in-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .letter-animation {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: letterSlideIn 0.8s forwards;
+        }
+        /* Retraso para cada letra */
+        .letter-animation:nth-child(1) { animation-delay: 0.2s; } /* Z */
+        .letter-animation:nth-child(2) { animation-delay: 0.4s; } /* U */
+        .letter-animation:nth-child(3) { animation-delay: 0.6s; } /* L */
+        .letter-animation:nth-child(4) { animation-delay: 0.8s; } /* E */
+        .letter-animation:nth-child(5) { animation-delay: 1.0s; } /* Y */
+        .letter-animation:nth-child(6) { animation-delay: 1.2s; } /* M */
+        .letter-animation:nth-child(7) { animation-delay: 1.4s; } /* A */
+
+        @keyframes letterSlideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 lg:p-16 max-w-4xl w-full text-center animate-fade-in">
+        <!-- Título principal -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-pink-500 mb-6 leading-tight">
+            Para Mi Única y Maravillosa Zuleyma
+        </h1>
+
+        <!-- Contenedor del Anagrama -->
+        <div class="mb-10">
+            <h2 class="text-3xl md:text-4xl font-semibold text-purple-dream mb-6">
+                Tu Nombre, Mi Inspiración:
+            </h2>
+            <div class="text-left text-xs md:text-sm text-text-dark space-y-4"> <!-- Texto del anagrama a 12px (text-xs) -->
+                <p class="letter-animation">
+                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">Z</span>afiro de mi vida, brillante y precioso.
+                </p>
+                <p class="letter-animation">
+                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">U</span>nica en mi corazón, no hay nadie como tú.
+                </p>
+                <p class="letter-animation">
+                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">L</span>uz que ilumina mi camino, cada día contigo es un regalo.
+                </p>
+                <p class="letter-animation">
+                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">E</span>ternamente te amaré, mi promesa es para siempre.
+                </p>
+                <p class="letter-animation">
+                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">Y</span> siempre a tu lado estaré, en cada paso de esta hermosa vida.
+                </p>
+                <p class="letter-animation">
+                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">M</span>i amor, mi musa, la razón de mi alegría.
+                </p>
+                <p class="letter-animation">
+                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">A</span>lma gemela que encontré, mi destino junto a ti.
+                </p>
+            </div>
+        </div>
+
+        <!-- Mensaje Romántico -->
+        <div class="bg-rose-blush rounded-lg p-6 md:p-8 shadow-inner mb-10">
+            <p class="text-text-dark text-xs md:text-sm italic leading-relaxed"> <!-- Mensaje romántico a 12px (text-xs) -->
+                "Cada día a tu lado es una aventura, un sueño hecho realidad. Tu sonrisa es mi sol, tu abrazo mi refugio. Gracias por ser la persona más maravillosa que he conocido. Te amo con todo mi ser, hoy y siempre."
+            </p>
+            <p class="mt-6 text-purple-dream font-semibold text-xs md:text-sm"> <!-- Texto "Con todo mi amor" a 12px (text-xs) -->
+                Con todo mi amor,
+                <br>Tu [Tu Nombre Aquí, o "Tu Amor"]
+            </p>
+        </div>
+
+        <!-- Nueva Sección: MOMENTOS -->
+        <div class="mt-10">
+            <h2 class="text-3xl md:text-4xl font-semibold text-pink-500 mb-8">
+                Nuestros momentos inolvidables
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Imagen 1 -->
+                <div class="relative w-full h-64 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <img src="WhatsApp Image 2025-07-16 at 8.17.58 PM (1).jpeg" alt="Momento juntos 1" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="text-white text-lg font-medium">Nuestro amor, siempre</p>
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="relative w-full h-64 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <img src="WhatsApp Image 2025-07-16 at 8.17.58 PM.jpeg" alt="Momento juntos 2" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="text-white text-lg font-medium">El reflejo de nuestro cariño</p>
+                    </div>
+                </div>
+                <!-- Imagen 3 -->
+                <div class="relative w-full h-64 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <img src="WhatsApp Image 2025-07-16 at 8.17.57 PM (3).jpeg" alt="Momento juntos 3" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="text-white text-lg font-medium">Tu sonrisa, mi alegría</p>
+                    </div>
+                </div>
+                <!-- Imagen 4 -->
+                <div class="relative w-full h-64 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <img src="WhatsApp Image 2025-07-16 at 8.17.57 PM (2).jpeg" alt="Momento juntos 4" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="text-white text-lg font-medium">Abrazos que curan el alma</p>
+                    </div>
+                </div>
+                <!-- Imagen 5 -->
+                <div class="relative w-full h-64 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <img src="WhatsApp Image 2025-07-16 at 8.17.57 PM (1).jpeg" alt="Momento juntos 5" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="text-white text-lg font-medium">Juntos en cada aventura</p>
+                    </div>
+                </div>
+                <!-- Imagen 6 -->
+                <div class="relative w-full h-64 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <img src="WhatsApp Image 2025-07-16 at 8.17.57 PM.jpeg" alt="Momento juntos 6" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="text-white text-lg font-medium">Un beso, mil emociones</p>
+                    </div>
+                </div>
+                <!-- Imagen 7 -->
+                <div class="relative w-full h-64 rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <img src="WhatsApp Image 2025-07-16 at 8.17.56 PM.jpeg" alt="Momento juntos 7" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <p class="text-white text-lg font-medium">Recuerdos que atesoro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
