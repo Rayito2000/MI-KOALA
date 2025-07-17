@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Mi Amada Zuleyma</title>
+    <title>Nuestros momentos inolvidables</title>
     <!-- Carga de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Carga de la fuente Montserrat desde Google Fonts -->
@@ -51,84 +51,13 @@
             }
         }
 
-        .animate-fade-in {
-            animation: fadeIn 2s ease-in-out forwards;
-            opacity: 0;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .letter-animation {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: letterSlideIn 0.8s forwards;
-        }
-        /* Retraso para cada letra */
-        .letter-animation:nth-child(1) { animation-delay: 0.2s; } /* Z */
-        .letter-animation:nth-child(2) { animation-delay: 0.4s; } /* U */
-        .letter-animation:nth-child(3) { animation-delay: 0.6s; } /* L */
-        .letter-animation:nth-child(4) { animation-delay: 0.8s; } /* E */
-        .letter-animation:nth-child(5) { animation-delay: 1.0s; } /* Y */
-        .letter-animation:nth-child(6) { animation-delay: 1.2s; } /* M */
-        .letter-animation:nth-child(7) { animation-delay: 1.4s; } /* A */
-
-        @keyframes letterSlideIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        /* Se eliminaron las animaciones de fade-in y letter-animation ya que no se usan */
     </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-4">
-    <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 lg:p-16 max-w-4xl w-full text-center animate-fade-in">
-        <!-- Título principal -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-pink-500 mb-6 leading-tight">
-            Para Mi Única y Maravillosa Zuleyma
-        </h1>
-
-        <!-- Contenedor del Anagrama -->
-        <div class="mb-10">
-            <h2 class="text-3xl md:text-4xl font-semibold text-purple-dream mb-6">
-                Tu Nombre, Mi Inspiración:
-            </h2>
-            <div class="text-left text-xs md:text-sm text-text-dark space-y-4"> <!-- Texto del anagrama a 12px (text-xs) -->
-                <p class="letter-animation">
-                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">Z</span>afiro de mi vida, brillante y precioso.
-                </p>
-                <p class="letter-animation">
-                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">U</span>nica en mi corazón, no hay nadie como tú.
-                </p>
-                <p class="letter-animation">
-                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">L</span>uz que ilumina mi camino, cada día contigo es un regalo.
-                </p>
-                <p class="letter-animation">
-                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">E</span>ternamente te amaré, mi promesa es para siempre.
-                </p>
-                <p class="letter-animation">
-                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">Y</span> siempre a tu lado estaré, en cada paso de esta hermosa vida.
-                </p>
-                <p class="letter-animation">
-                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">M</span>i amor, mi musa, la razón de mi alegría.
-                </p>
-                <p class="letter-animation">
-                    <span class="font-bold text-pink-600 text-2xl md:text-3xl">A</span>lma gemela que encontré, mi destino junto a ti.
-                </p>
-            </div>
-        </div>
-
-        <!-- Mensaje Romántico -->
-        <div class="bg-rose-blush rounded-lg p-6 md:p-8 shadow-inner mb-10">
-            <p class="text-text-dark text-xs md:text-sm italic leading-relaxed"> <!-- Mensaje romántico a 12px (text-xs) -->
-                "Cada día a tu lado es una aventura, un sueño hecho realidad. Tu sonrisa es mi sol, tu abrazo mi refugio. Gracias por ser la persona más maravillosa que he conocido. Te amo con todo mi ser, hoy y siempre."
-            </p>
-            <p class="mt-6 text-purple-dream font-semibold text-xs md:text-sm"> <!-- Texto "Con todo mi amor" a 12px (text-xs) -->
-                Con todo mi amor,
-                <br>Tu [Tu Nombre Aquí, o "Tu Amor"]
-            </p>
-        </div>
-
-        <!-- Nueva Sección: MOMENTOS -->
-        <div class="mt-10">
+    <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 lg:p-16 max-w-4xl w-full text-center">
+        <!-- Sección: Nuestros momentos inolvidables -->
+        <div>
             <h2 class="text-3xl md:text-4xl font-semibold text-pink-500 mb-8">
                 Nuestros momentos inolvidables
             </h2>
@@ -187,3 +116,4 @@
     </div>
 </body>
 </html>
+
